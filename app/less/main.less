@@ -353,5 +353,150 @@
         }
    }
 
+   .about{
+     height: 917px;
+     width: 100%;
+     background: url(../img/about-bg.jpg) no-repeat center;
+     background-size: cover;
+     display: flex;
+     .about-text{
+          padding-top: 50px;
+          max-width: 540px;
+          margin-left: 21%;
+          
+          p{
+               font-family: Roboto;
+               font-style: normal;
+               font-weight: normal;
+               font-size: 20px;
+               line-height: 23px;
+
+               color: #F9F9F9;
+          }
+     }
+     .about-slider{
+          height: 620px;
+          width: 475px;
+          padding-top: 50px;
+          margin-left: 100px;
+          .swiper-wrapper{
+               height: 650px;
+          }
+          .swiper-pagination-bullets{
+               bottom: 37px;
+               left: 0;
+               width: 100%;
+               text-align: left;
+
+               .swiper-pagination-bullet{
+                    width: 10px;
+                    height: 10px;
+                    background: #fff;
+                    opacity: unset;
+               }
+
+               .swiper-pagination-bullet-active{
+                    background: #256DA7;
+               }
+          }
+          .slider{
+               background: transparent;
+               height: 565px;
+               width: 475px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+
+               img{
+                    width: 100%;
+                    height: 100%;
+               }
+             }
+     }
+   }
+
+   .principles{
+        padding-top: 20px;
+
+        .princip-title{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: 39px;
+          /* identical to box height */
+          
+          text-align: center;
+          
+          color: #5C5D58;          
+        }
+
+        .princip-subtitle{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 27px;
+          /* identical to box height */
+          
+          text-align: center;
+          
+          color: #5C5D58;          
+        }
+
+        .line{
+          display: flex;
+          margin: 0 auto;
+          margin-top: 21px;
+          margin-bottom: 21px;
+        }
+
+        .princip-items{
+          display: flex;
+          flex-flow: row wrap;
+          max-width: 1210px;
+          margin: 0 auto;
+          margin-top: 57px;
+          justify-content: center;
+             .princip-item{
+               width: 350px;
+               height: 223px;
+               margin-right: 30px;
+               margin-bottom: 30px;
+               background: #10A2CB;
+               border-radius: 4px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+                  &:nth-child(3n+3){
+                       margin-right: unset;
+                  }
+                  &:nth-child(2n+2){
+                    background: #1C569B;
+                  }
+               .box{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    align-items:center;
+
+                    p{
+                         font-family: Montserrat;
+                         font-style: normal;
+                         font-weight: normal;
+                         font-size: 20px;
+                         line-height: 24px;
+                         text-align: center;
+                         text-transform: capitalize;
+
+                         color: #F9F9F9;
+
+                         margin-top:23px;
+                    }
+               }
+             }
+        }
+   }
 
     
