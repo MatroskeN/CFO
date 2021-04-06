@@ -126,6 +126,7 @@ header .header-content .header-menu .menu-item {
   font-size: 22px;
   line-height: 26px;
   /* identical to box height */
+  text-align: center;
   color: #F9F9F9;
 }
 header .header-content .header-phone {
@@ -144,7 +145,13 @@ header .header-content .header-phone a {
 .scroll-header {
   background: silver;
 }
-@media (max-width: 1600px) {
+.scroll-header .header-content {
+  padding-top: 25px !important;
+}
+.burger {
+  display: none;
+}
+@media (max-width: 1905px) {
   header .header-content {
     max-width: 1200px;
     padding-left: 37px;
@@ -165,6 +172,18 @@ header .header-content .header-phone a {
   header .header-content .header-phone a {
     font-size: 16px;
     line-height: 21px;
+  }
+}
+@media (max-width: 769px) {
+  header .header-phone,
+  header .header-menu {
+    display: none !important;
+  }
+  header .header-content {
+    max-width: 100%;
+  }
+  header .burger {
+    display: block !important;
   }
 }
 .banner {
@@ -223,6 +242,24 @@ header .header-content .header-phone a {
   line-height: 23px;
   color: #0E577B;
 }
+@media (max-width: 769px) {
+  .banner .main-title {
+    max-width: 280px;
+  }
+  .banner .main-title h1 {
+    width: 100%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #F9F9F9;
+  }
+  .banner .main-title .title-btn {
+    margin-top: 61px;
+  }
+}
 .offers {
   padding-top: 90px;
   max-width: 874px;
@@ -279,6 +316,44 @@ header .header-content .header-phone a {
   padding: 15px 30px 15px 30px;
   background: transparent;
 }
+@media (max-width: 769px) {
+  .offers {
+    max-width: 300px;
+    padding-top: 50px;
+  }
+  .offers .offer-title {
+    width: 280px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #5C5D58;
+    margin-bottom: 20px;
+  }
+  .offers .offer-subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #5C5D58;
+    max-width: 280px;
+  }
+  .offers .offer-btn {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* text blue */
+    color: #0E577B;
+    padding: 11px 26px 10px 26px;
+  }
+}
 .why {
   padding-top: 80px;
 }
@@ -292,6 +367,34 @@ header .header-content .header-phone a {
   line-height: 39px;
   /* identical to box height */
   color: #5C5D58;
+}
+@media (max-width: 769px) {
+  .why .why-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #5C5D58;
+    max-width: 210px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
+  .why .counter {
+    height: auto;
+    padding-bottom: 35px;
+  }
+  .why .counter .counter-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .why .counter .counter-wrapper .counter-item {
+    margin-right: unset !important;
+  }
 }
 .counter {
   display: -webkit-box;
@@ -452,6 +555,45 @@ header .header-content .header-phone a {
   margin: 0 auto;
   margin-top: auto;
   margin-bottom: auto;
+}
+@media (max-width: 769px) {
+  .our {
+    padding-top: 34px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .our-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px !important;
+    line-height: 27px !important;
+    /* identical to box height */
+    color: #5C5D58;
+  }
+  .our-subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    text-align: center;
+    color: #5C5D58;
+  }
+  .client-items {
+    padding-bottom: 35px !important;
+  }
+  .client-items .client-item {
+    width: 280px !important;
+    height: 176px !important;
+    margin-right: unset !important;
+    margin-bottom: 13px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .client-items .client-item img {
+    width: 237px;
+  }
 }
 .about {
   height: 917px;
@@ -899,15 +1041,22 @@ header .header-content .header-phone a {
 }
 .projects .swiper-container .swiper-wrapper {
   min-height: 400px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .projects .grid {
   margin-top: 60px;
 }
 .projects .grid .grid-item {
-  width: 400px;
+  width: 33.3% !important;
   height: 300px !important;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 .projects .grid .grid-item:nth-child(3n+3) {
   margin-right: unset;
@@ -1120,4 +1269,12 @@ footer .copyright {
   color: #F9F9F9;
   margin-top: -31px;
   padding-bottom: 46px;
+}
+@media (max-width: 1300px) {
+  footer .footer-content {
+    max-width: 1100px;
+  }
+  footer .copyright {
+    max-width: 1100px;
+  }
 }

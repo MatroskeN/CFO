@@ -7,17 +7,18 @@ $(document).ready(function (){
         type: 'bullets',
     },
   });
-  var swiper = new Swiper('.grid-container', {
+  var swiper1 = new Swiper('.grid-container', {
     slidesPerView: 'auto',
     pagination: {
         el: '.grid-pagination',
         type: 'bullets',
     },
     centeredSlides: true,
+    loop:true,
   });
 // init Isotope
 var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
+    itemSelector: '.element-slider',
     layoutMode: 'fitRows'
   });
   // filter functions
@@ -88,7 +89,6 @@ typewriter.typeString('Ведущая компания по разработке
     scroll = window.pageYOffset || (document.documentElement.clientHeight ? document.documentElement.scrollTop : document.body.scrollTop);
     if (scroll > hedheight) { // высота банера
         $(header).addClass("scroll-header");
-        console.log('хуй');
     }
     if (scroll<hedheight){
         $(header).removeClass("scroll-header");
