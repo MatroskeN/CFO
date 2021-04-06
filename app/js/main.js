@@ -13,6 +13,7 @@ $(document).ready(function (){
         el: '.grid-pagination',
         type: 'bullets',
     },
+    centeredSlides: true,
   });
 // init Isotope
 var $grid = $('.grid').isotope({
@@ -64,6 +65,34 @@ $('div').each(function(){
         }
         i++;
       },step);
+});
+
+//typewriter script
+var app = document.getElementById('type');
+
+var typewriter = new Typewriter(app, {
+    loop: false
+});
+
+typewriter.typeString('Ведущая компания по разработке дизайна вашего продукта')
+
+    .start();
+
+
+
+    //headerscroll
+    var scroll = 0;
+    let hedheight = $(".banner").height();
+    console.log(hedheight);
+  $(window).on("scroll", function(){
+    scroll = window.pageYOffset || (document.documentElement.clientHeight ? document.documentElement.scrollTop : document.body.scrollTop);
+    if (scroll > hedheight) { // высота банера
+        $(header).addClass("scroll-header");
+        console.log('хуй');
+    }
+    if (scroll<hedheight){
+        $(header).removeClass("scroll-header");
+    }
 });
 })
 

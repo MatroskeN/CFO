@@ -9,7 +9,8 @@
 
     <!--Plugin CSS file with desired skin-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--jQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -21,7 +22,7 @@
 
 </head>
 <body id="body">
-    <header>
+    <header id="header">
         <div class="header-content">
             <div class="logo">
                 <p>Logo</p>
@@ -41,7 +42,8 @@
     </header>
     <div class="banner">
         <div class="main-title">
-                <h1>Ведущая компания по разработке дизайна вашего продукта</h1>
+                <!-- <h1>Ведущая компания по разработке дизайна вашего продукта</h1> -->
+                <h1 id="type"></h1>
                 <button class="title-btn">Подробнее</button>
         </div>
     </div>
@@ -162,32 +164,32 @@
             Вы в хорошей компании
         </div>
         <div class="princip-items">
-            <div class="princip-item">
+            <div class="princip-item" data-aos="fade-down-right">
                 <div class="box">
                     <img src="img/клиентоориентированность.svg" alt="item">
                     <p>Клиентоориентированность</p>
                 </div>
             </div>
-            <div class="princip-item">
+            <div class="princip-item" data-aos="fade-down-right">
                 <div class="box">
                     <img src="img/профессионализм.svg" alt="item">
                     <p>профессионализм</p>
                 </div>
                 
             </div>
-            <div class="princip-item">
+            <div class="princip-item" data-aos="fade-down-right">
                 <div class="box">
                     <img src="img/надежность.svg" alt="item">
                     <p>надежность</p>
                 </div>
             </div>
-            <div class="princip-item">
+            <div class="princip-item" data-aos="fade-down-right">
                 <div class="box">
                     <img src="img/скорость.svg" alt="item">
                     <p>скорость</p>
                 </div>
             </div>
-            <div class="princip-item">
+            <div class="princip-item" data-aos="fade-down-right">
                 <div class="box">
                     <img src="img/масштабность.svg" alt="item">
                     <p>масштабность</p>
@@ -204,7 +206,7 @@
             Мы Работаем для Вас
         </div>
         <div class="service-items">
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-right">
                <div class="item-pic">
                 <img src="img/Оптовая торговляя.jpg" alt="item">
                </div>
@@ -216,7 +218,7 @@
                 Мы обеспечиваем широчайший ассортимент товаров категории non-food для наших клиентов, от товаров для кемпинга до товаров для детей, от аксессуаров для сада и огорода до посуды и хозяйственно-бытовых товаров для дома.
                </div> 
             </div>
-            <div class="service-item">
+            <div class="service-item" data-aos="fade-left">
                 <div class="item-pic">
                  <img src="img/Оптовая торговляя.jpg" alt="item">
                 </div>
@@ -228,7 +230,7 @@
                  Мы обеспечиваем широчайший ассортимент товаров категории non-food для наших клиентов, от товаров для кемпинга до товаров для детей, от аксессуаров для сада и огорода до посуды и хозяйственно-бытовых товаров для дома.
                 </div> 
              </div>
-             <div class="service-item">
+             <div class="service-item" data-aos="fade-right">
                 <div class="item-pic">
                  <img src="img/Оптовая торговляя.jpg" alt="item">
                 </div>
@@ -240,7 +242,7 @@
                  Мы обеспечиваем широчайший ассортимент товаров категории non-food для наших клиентов, от товаров для кемпинга до товаров для детей, от аксессуаров для сада и огорода до посуды и хозяйственно-бытовых товаров для дома.
                 </div> 
              </div>
-             <div class="service-item">
+             <div class="service-item" data-aos="fade-left">
                 <div class="item-pic">
                  <img src="img/Оптовая торговляя.jpg" alt="item">
                 </div>
@@ -252,7 +254,7 @@
                  Мы обеспечиваем широчайший ассортимент товаров категории non-food для наших клиентов, от товаров для кемпинга до товаров для детей, от аксессуаров для сада и огорода до посуды и хозяйственно-бытовых товаров для дома.
                 </div> 
              </div>
-             <div class="service-item">
+             <div class="service-item" data-aos="fade-right">
                 <div class="item-pic">
                  <img src="img/Оптовая торговляя.jpg" alt="item">
                 </div>
@@ -264,7 +266,7 @@
                  Мы обеспечиваем широчайший ассортимент товаров категории non-food для наших клиентов, от товаров для кемпинга до товаров для детей, от аксессуаров для сада и огорода до посуды и хозяйственно-бытовых товаров для дома.
                 </div> 
              </div>
-             <div class="service-item">
+             <div class="service-item" data-aos="fade-left">
                 <div class="item-pic">
                  <img src="img/Оптовая торговляя.jpg" alt="item">
                 </div>
@@ -286,7 +288,7 @@
             от идеи до воплощения
         </div>
         <div class="idea-items">
-            <div class="idea-item first-step">
+            <div class="idea-item first-step" data-aos="fade-up">
                 <div class="step">
                     Шаг 1
                 </div>
@@ -294,7 +296,7 @@
                     Ваша идея
                 </div>
             </div>
-            <div class="idea-item second-step">
+            <div class="idea-item second-step" data-aos="fade-up">
                 <div class="step">
                     Шаг 2
                 </div>
@@ -302,7 +304,7 @@
                     Коммерческое предложение
                 </div>
             </div>
-            <div class="idea-item third-step">
+            <div class="idea-item third-step" data-aos="fade-up">
                 <div class="step">
                     Шаг 3
                 </div>
@@ -453,8 +455,8 @@
                     Здесь будет название проекта
                 </div>
               </div>
-                <div class="swiper-pagination grid-pagination">
-                </div>
+            </div>
+            <div class="swiper-pagination grid-pagination">
             </div>
         </div>
     </div>
@@ -526,5 +528,10 @@
         </div>  
     </footer>
 <script src="js/isotope-docs.min.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>

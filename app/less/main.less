@@ -88,8 +88,9 @@
         height: 100px;
         width: 100%;
         position: fixed;
+        z-index: 20;
         background: transparent;
-
+          transition: all 0.4s;
         .header-content{
              .logo{
                font-family: Roboto;
@@ -146,7 +147,37 @@
              }
         }
    }
+   .scroll-header{
+        background: silver;
+   }
+   @media(max-width:1600px){
+        header{
+             .header-content{
+               max-width: 1200px;
+                  padding-left: 37px;
 
+                  .header-menu{
+                       padding-left: 30px;
+
+                       .menu-item{
+                            margin-right: 33px;
+                            min-width: 120px;
+                            font-size: 18px;
+                            line-height: 18px;
+                            text-align: center;
+                       }
+                  }
+
+                  .header-phone{
+                       min-width: 150px;
+                       a{
+                            font-size: 16px;
+                            line-height: 21px;
+                       }
+                  }
+             }
+        }
+   }
    .banner{
         height: 690px;
         width: 100%;
@@ -167,7 +198,7 @@
           font-size: 44px;
           line-height: 54px;
           text-align: center;
-          
+          width: 803px;
           color: #F9F9F9;
           }
           .title-btn{
@@ -191,6 +222,7 @@
                color: #0E577B;
           }
         }
+        
    }
 
    .offers{
@@ -296,13 +328,16 @@
                max-width: 1250px;
                margin: 0 auto;
                z-index: 1;
+               padding-top: 47px;
           }
           .counter-item{
                display: flex;
+               margin-bottom: auto;
                flex-direction: column;
                position: relative;
                margin-right: 187px;
                max-width: 200px;
+               min-width: 191px;
                text-align: center;
                justify-content: center;
                p{
@@ -314,13 +349,10 @@
                     
                     color: #F9F9F9;
 
-                    margin-bottom: 31px;
-                    
-                    &:first-child{
-                         margin-bottom: unset;
-                    }
+                    margin-bottom: unset;
                }
                .count{
+                    margin-top: 31px;
                     margin-bottom: 22px;
                     font-family: Roboto;
                     font-style: normal;
@@ -336,6 +368,15 @@
                     margin-right: unset;
                }
           }
+   }
+
+   @media(max-width:1500px){
+        .counter-wrapper{
+             max-width: 1200px !important;
+        }
+        .counter-item{
+             margin-right: 30px !important;
+        }
    }
 
    .our{
@@ -422,6 +463,15 @@
                line-height: 23px;
 
                color: #F9F9F9;
+          }
+     }
+     @media(max-width:1500px){
+          .about-text{
+               p{
+                    font-size: 18px;
+                    line-height: 20px;
+               }
+               
           }
      }
      .about-slider{
@@ -709,6 +759,17 @@
                background-size: cover;
              }
         }
+
+        @media(max-width:1251px){
+             .idea-items{
+                  max-width: 600px;
+                  margin: 0 auto;
+                  margin-top: 61px;
+                  .idea-item{
+                       margin-right: unset;
+                  }
+             }
+        }
    }
 
    .projects{
@@ -777,32 +838,34 @@
           max-width: 1260px;
           margin: 0 auto;
           min-height: 400px;
-          
+          .swiper-pagination-bullets{
+               bottom: 37px;
+               left: 0;
+               width: auto;
+               position: relative;
+               display: block;
+
+               .swiper-pagination-bullet{
+                    width: 10px;
+                    height: 10px;
+                    background: gray;
+                    opacity: unset;
+               }
+
+               .swiper-pagination-bullet-active{
+                    background: #256DA7;
+               }
+          }
           .swiper-wrapper{
                min-height: 400px;
-               .swiper-pagination-bullets{
-                    bottom: 37px;
-                    left: 0;
-                    width: 100%;
-                    text-align: left;
-     
-                    .swiper-pagination-bullet{
-                         width: 10px;
-                         height: 10px;
-                         background: #fff;
-                         opacity: unset;
-                    }
-     
-                    .swiper-pagination-bullet-active{
-                         background: #256DA7;
-                    }
-               }
+               
           }
      }
      .grid {
           margin-top: 60px;
           .grid-item{
                width: 400px;
+               height: 300px !important;
                margin-right: 30px;
                margin-bottom: 30px;
                &:nth-child(3n+3){

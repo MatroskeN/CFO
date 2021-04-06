@@ -77,7 +77,11 @@ header {
   height: 100px;
   width: 100%;
   position: fixed;
+  z-index: 20;
   background: transparent;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 header .header-content {
   padding-top: 50px;
@@ -137,6 +141,32 @@ header .header-content .header-phone a {
   text-decoration: none;
   border-bottom: 2px solid #fff;
 }
+.scroll-header {
+  background: silver;
+}
+@media (max-width: 1600px) {
+  header .header-content {
+    max-width: 1200px;
+    padding-left: 37px;
+  }
+  header .header-content .header-menu {
+    padding-left: 30px;
+  }
+  header .header-content .header-menu .menu-item {
+    margin-right: 33px;
+    min-width: 120px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+  }
+  header .header-content .header-phone {
+    min-width: 150px;
+  }
+  header .header-content .header-phone a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
 .banner {
   height: 690px;
   width: 100%;
@@ -172,6 +202,7 @@ header .header-content .header-phone a {
   font-size: 44px;
   line-height: 54px;
   text-align: center;
+  width: 803px;
   color: #F9F9F9;
 }
 .banner .main-title .title-btn {
@@ -303,12 +334,14 @@ header .header-content .header-phone a {
   max-width: 1250px;
   margin: 0 auto;
   z-index: 1;
+  padding-top: 47px;
 }
 .counter .counter-item {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -317,6 +350,7 @@ header .header-content .header-phone a {
   position: relative;
   margin-right: 187px;
   max-width: 200px;
+  min-width: 191px;
   text-align: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -330,12 +364,10 @@ header .header-content .header-phone a {
   font-size: 20px;
   line-height: 23px;
   color: #F9F9F9;
-  margin-bottom: 31px;
-}
-.counter .counter-item p:first-child {
   margin-bottom: unset;
 }
 .counter .counter-item .count {
+  margin-top: 31px;
   margin-bottom: 22px;
   font-family: Roboto;
   font-style: normal;
@@ -347,6 +379,14 @@ header .header-content .header-phone a {
 }
 .counter .counter-item:nth-child(5n) {
   margin-right: unset;
+}
+@media (max-width: 1500px) {
+  .counter-wrapper {
+    max-width: 1200px !important;
+  }
+  .counter-item {
+    margin-right: 30px !important;
+  }
 }
 .our {
   padding-top: 80px;
@@ -435,6 +475,12 @@ header .header-content .header-phone a {
   font-size: 20px;
   line-height: 23px;
   color: #F9F9F9;
+}
+@media (max-width: 1500px) {
+  .about .about-text p {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 .about .about-slider {
   height: 620px;
@@ -763,6 +809,16 @@ header .header-content .header-phone a {
   background: url(../img/step3.jpg) no-repeat center;
   background-size: cover;
 }
+@media (max-width: 1251px) {
+  .ideas .idea-items {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 61px;
+  }
+  .ideas .idea-items .idea-item {
+    margin-right: unset;
+  }
+}
 .projects {
   margin-top: 75px;
 }
@@ -825,29 +881,31 @@ header .header-content .header-phone a {
   margin: 0 auto;
   min-height: 400px;
 }
-.projects .swiper-container .swiper-wrapper {
-  min-height: 400px;
-}
-.projects .swiper-container .swiper-wrapper .swiper-pagination-bullets {
+.projects .swiper-container .swiper-pagination-bullets {
   bottom: 37px;
   left: 0;
-  width: 100%;
-  text-align: left;
+  width: auto;
+  position: relative;
+  display: block;
 }
-.projects .swiper-container .swiper-wrapper .swiper-pagination-bullets .swiper-pagination-bullet {
+.projects .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: #fff;
+  background: gray;
   opacity: unset;
 }
-.projects .swiper-container .swiper-wrapper .swiper-pagination-bullets .swiper-pagination-bullet-active {
+.projects .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background: #256DA7;
+}
+.projects .swiper-container .swiper-wrapper {
+  min-height: 400px;
 }
 .projects .grid {
   margin-top: 60px;
 }
 .projects .grid .grid-item {
   width: 400px;
+  height: 300px !important;
   margin-right: 30px;
   margin-bottom: 30px;
 }
