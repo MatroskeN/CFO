@@ -5,42 +5,43 @@ $(document).ready(function (){
     pagination: {
         el: '.about-pagination',
         type: 'bullets',
+        clickable: true,
     },
   });
-  var swiper1 = new Swiper('.grid-container', {
-    slidesPerView: 'auto',
-    pagination: {
-        el: '.grid-pagination',
-        type: 'bullets',
-    },
-    centeredSlides: true,
-    loop:true,
-  });
-// init Isotope
-var $grid = $('.grid').isotope({
-    itemSelector: '.element-slider',
-    layoutMode: 'fitRows'
-  });
-  // filter functions
-  var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
-    }
-  };
-  // bind filter button click
-  $('.filters-button-group').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $grid.isotope({ filter: filterValue });
-  });
+
+  if ($(window).width()<769){
+    console.log('less');
+    var swiper1 = new Swiper('.grid-container', {
+      slidesPerView: '1',
+      pagination: {
+          el: '.grid-pagination',
+          type: 'bullets',
+          clickable: true,
+      },
+      navigation: {
+        nextEl: '.next-btn',
+        prevEl: '.prev-btn',
+      },
+    });
+  } 
+  if ($(window).width()>769){
+    var swiper1 = new Swiper('.grid-container', {
+      slidesPerView: '3',
+      pagination: {
+          el: '.grid-pagination',
+          type: 'bullets',
+          clickable: true,
+      },
+      navigation: {
+        nextEl: '.next-btn',
+        prevEl: '.prev-btn',
+      },
+    });
+  }
+    
+  
+  
+
   // change is-checked class on buttons
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
@@ -94,5 +95,42 @@ typewriter.typeString('Ведущая компания по разработке
         $(header).removeClass("scroll-header");
     }
 });
+
+//filter
+$(".stay-filter").on("click", function(){
+  $(".filter-slide").addClass("hidden-filter");
+  $(".filter-slide").removeClass("visible-filter");
+  $(".stay").removeClass("hidden-filter");
+  $(".stay").addClass("visible-filter");
+})
+$(".showbox-filter").on("click", function(){
+  $(".filter-slide").addClass("hidden-filter");
+  $(".filter-slide").removeClass("visible-filter");
+  $(".showbox").removeClass("hidden-filter");
+  $(".showbox").addClass("visible-filter");
+})
+$(".licens-filter").on("click", function(){
+  $(".filter-slide").addClass("hidden-filter");
+  $(".filter-slide").removeClass("visible-filter");
+  $(".licens").removeClass("hidden-filter");
+  $(".licens").addClass("visible-filter");
+})
+$(".all-filter").on("click", function(){
+  $(".filter-slide").removeClass("hidden-filter");
+  $(".filter-slide").addClass("visible-filter");
+})
+
+  //modal
+  $("#burger").on("click", function () {
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("body").style.overflow = "hidden";
+});
+
+$("#xclose").on("click", function () {
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("body").style.overflow = "visible";
+});
+
+
 })
 

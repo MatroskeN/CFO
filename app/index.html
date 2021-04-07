@@ -28,27 +28,30 @@
                 <p>Logo</p>
             </div>
             <div class="header-menu">
-                <div class="menu-item">О нас</div>
-                <div class="menu-item">Клиенты</div>
-                <div class="menu-item">Наши принципы</div>
-                <div class="menu-item">Услуги</div>
-                <div class="menu-item">Наши проекты</div>
-                <div class="menu-item">Контакты</div>
+                <div class="menu-item"><a href="">О нас</a></div>
+                <div class="menu-item"><a href="">Клиенты</a></div>
+                <div class="menu-item"><a href="">Наши принципы</a></div>
+                <div class="menu-item"><a href="">Услуги</a></div>
+                <div class="menu-item"><a href="">Наши проекты</a></div>
+                <div class="menu-item"><a href="">Контакты</a></div>
             </div>
             <div class="header-phone">
                 <a href="tel:+74993806888">+7(499)380-68-88</a>
             </div>
-            <img src="img/burger.svg" alt="burger" class="burger">
+            <img src="img/burger.svg" alt="burger" class="burger" id="burger">
         </div>
     </header>
     <div class="banner">
         <div class="main-title">
                 <!-- <h1>Ведущая компания по разработке дизайна вашего продукта</h1> -->
                 <h1 id="type"></h1>
-                <button class="title-btn">Подробнее</button>
+                
+                <button class="title-btn">
+                    Подробнее
+                </button>
         </div>
     </div>
-    <div class="offers">
+    <div class="offers" >
         <div class="offer-title">
             <h2>
                 Креативные <a href="">дизайнерские разработки</a> для Ваших <br> промо-акций и
@@ -61,7 +64,7 @@
                 Мы предложим ассортимент, разработаем дизайн, осуществим упаковку и доставку.
             </h3>
         </div>
-        <button class="offer-btn">
+        <button class="offer-btn" name="offers">
             Что мы умеем
         </button>
     </div>
@@ -80,7 +83,7 @@
                 <div class="counter-item">
                     <p>Более</p>
                     <div class="count" data-num="400"></div>
-                    <p>упешных
+                    <p>уcпешных
                         проектов</p>
                 </div>
                 <div class="counter-item">
@@ -204,7 +207,7 @@
         </div>
         <img src="img/Line.png" alt="line" class="line">
         <div class="services-subtitle">
-            Мы Работаем для Вас
+            Мы работаем для вас
         </div>
         <div class="service-items">
             <div class="service-item" data-aos="fade-right">
@@ -320,146 +323,71 @@
         <img src="img/Line.png" alt="line" class="line">
         <div class="tab-slider">
             <div class="button-group filters-button-group">
-                <button class="button is-checked" data-filter="*">Коллекция</button>
-                <button class="button" data-filter=".pink">Стойки</button>
-                <button class="button" data-filter=".red">Шоу боксы</button>
-                <button class="button" data-filter=".green">Лицензия</button>
+                <button class="button is-checked all-filter" data-filter="*">Коллекция</button>
+                <button class="button stay-filter" data-filter=".pink">Стойки</button>
+                <button class="button showbox-filter" data-filter=".red">Шоу боксы</button>
+                <button class="button licens-filter" data-filter=".green">Лицензия</button>
             </div>
-            <!-- <div class="grid">
-                <div class="element-item transition metal " data-category="transition">
-                  <h3 class="name">Mercury</h3>
-                  <p class="symbol">Hg</p>
-                  <p class="number">80</p>
-                  <p class="weight">200.59</p>
+            <!-- <div class="swiper-slide slider grid-item" data-category="green">
+                <img src="img/grid-item (1).png" alt="item">
+                <div class="item-subtitle">
+                    Здесь будет название проекта
                 </div>
-                <div class="element-item metalloid " data-category="metalloid">
-                  <h3 class="name">Tellurium</h3>
-                  <p class="symbol">Te</p>
-                  <p class="number">52</p>
-                  <p class="weight">127.6</p>
-                </div>
-                <div class="element-item post-transition metal " data-category="post-transition">
-                  <h3 class="name">Bismuth</h3>
-                  <p class="symbol">Bi</p>
-                  <p class="number">83</p>
-                  <p class="weight">208.980</p>
-                </div>
-                <div class="element-item post-transition metal " data-category="post-transition">
-                  <h3 class="name">Lead</h3>
-                  <p class="symbol">Pb</p>
-                  <p class="number">82</p>
-                  <p class="weight">207.2</p>
-                </div>
-                <div class="element-item transition metal " data-category="transition">
-                  <h3 class="name">Gold</h3>
-                  <p class="symbol">Au</p>
-                  <p class="number">79</p>
-                  <p class="weight">196.967</p>
-                </div>
-                <div class="element-item alkali metal " data-category="alkali">
-                  <h3 class="name">Potassium</h3>
-                  <p class="symbol">K</p>
-                  <p class="number">19</p>
-                  <p class="weight">39.0983</p>
-                </div>
-                <div class="element-item alkali metal " data-category="alkali">
-                  <h3 class="name">Sodium</h3>
-                  <p class="symbol">Na</p>
-                  <p class="number">11</p>
-                  <p class="weight">22.99</p>
-                </div>
-                <div class="element-item transition metal " data-category="transition">
-                  <h3 class="name">Cadmium</h3>
-                  <p class="symbol">Cd</p>
-                  <p class="number">48</p>
-                  <p class="weight">112.411</p>
-                </div>
-                <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
-                  <h3 class="name">Calcium</h3>
-                  <p class="symbol">Ca</p>
-                  <p class="number">20</p>
-                  <p class="weight">40.078</p>
-                </div>
-                <div class="element-item transition metal " data-category="transition">
-                  <h3 class="name">Rhenium</h3>
-                  <p class="symbol">Re</p>
-                  <p class="number">75</p>
-                  <p class="weight">186.207</p>
-                </div>
-                <div class="element-item post-transition metal " data-category="post-transition">
-                  <h3 class="name">Thallium</h3>
-                  <p class="symbol">Tl</p>
-                  <p class="number">81</p>
-                  <p class="weight">204.383</p>
-                </div>
-                <div class="element-item metalloid " data-category="metalloid">
-                  <h3 class="name">Antimony</h3>
-                  <p class="symbol">Sb</p>
-                  <p class="number">51</p>
-                  <p class="weight">121.76</p>
-                </div>
-                <div class="element-item transition metal " data-category="transition">
-                  <h3 class="name">Cobalt</h3>
-                  <p class="symbol">Co</p>
-                  <p class="number">27</p>
-                  <p class="weight">58.933</p>
-                </div>
-                <div class="element-item lanthanoid metal inner-transition " data-category="lanthanoid">
-                  <h3 class="name">Ytterbium</h3>
-                  <p class="symbol">Yb</p>
-                  <p class="number">70</p>
-                  <p class="weight">173.054</p>
-                </div>
-                <div class="element-item noble-gas nonmetal " data-category="noble-gas">
-                  <h3 class="name">Argon</h3>
-                  <p class="symbol">Ar</p>
-                  <p class="number">18</p>
-                  <p class="weight">39.948</p>
-                </div>
-                <div class="element-item diatomic nonmetal " data-category="diatomic">
-                  <h3 class="name">Nitrogen</h3>
-                  <p class="symbol">N</p>
-                  <p class="number">7</p>
-                  <p class="weight">14.007</p>
-                </div>
-                <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                  <h3 class="name">Uranium</h3>
-                  <p class="symbol">U</p>
-                  <p class="number">92</p>
-                  <p class="weight">238.029</p>
-                </div>
-                <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-                  <h3 class="name">Plutonium</h3>
-                  <p class="symbol">Pu</p>
-                  <p class="number">94</p>
-                  <p class="weight">(244)</p>
-                </div>
-            </div>               -->
+            </div> -->
         </div>
         <div class="swiper-container grid-container" id="slideMain">
-            <div class="swiper-wrapper grid">
-              <div class="swiper-slide slider grid-item" data-category="green">
-                    <img src="img/grid-item (1).png" alt="item">
-                    <div class="item-subtitle">
-                        Здесь будет название проекта
-                    </div>
-              </div>
-              <div class="swiper-slide slider grid-item" data-category="red">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slider filter-slide stay">
+                <img src="img/grid-item (1).png" alt="item">
+                <div class="item-subtitle">
+                    Здесь будет название проекта
+                </div>
+              </div> 
+              <div class="swiper-slide slider filter-slide showbox">
                 <img src="img/grid-item (2).png" alt="item">
                 <div class="item-subtitle">
                     Здесь будет название проекта
                 </div>
+              </div> 
+              <div class="swiper-slide slider filter-slide licens">
+                <img src="img/grid-item (3).png" alt="item">
+                <div class="item-subtitle">
+                    Здесь будет название проекта
+                </div>
               </div>
-              <div class="swiper-slide slider grid-item" data-category="pink">
+              <div class="swiper-slide slider filter-slide stay">
+                <img src="img/grid-item (1).png" alt="item">
+                <div class="item-subtitle">
+                    Здесь будет название проекта
+                </div>
+              </div> 
+              <div class="swiper-slide slider filter-slide showbox">
+                <img src="img/grid-item (2).png" alt="item">
+                <div class="item-subtitle">
+                    Здесь будет название проекта
+                </div>
+              </div> 
+              <div class="swiper-slide slider filter-slide licens">
                 <img src="img/grid-item (3).png" alt="item">
                 <div class="item-subtitle">
                     Здесь будет название проекта
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination grid-pagination">
-            </div>
-        </div>
+            <!-- Add navigation -->
+              <div class="swiper-pagination grid-pagination"></div>
+              <!--1C569B-->
+              <div class="prev-btn">
+                <svg class="navigation-element prev" width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.723568 15.1219L15.5245 0.361867C16.0094 -0.121444 16.7946 -0.120631 17.2787 0.364367C17.7624 0.849302 17.7612 1.63486 17.2762 2.11855L3.35625 16.0001L17.2767 29.8815C17.7616 30.3652 17.7629 31.1503 17.2792 31.6353C17.0365 31.8784 16.7186 32 16.4006 32C16.0835 32 15.7668 31.8792 15.5246 31.6378L0.723568 16.8782C0.490007 16.6458 0.358944 16.3296 0.358944 16.0001C0.358944 15.6706 0.490383 15.3547 0.723568 15.1219Z" fill="#5C5D58"/>
+                </svg>
+              </div>
+              <div class="next-btn">
+                <svg class="navigation-element next" width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.2764 15.1219L2.47549 0.361867C1.99055 -0.121444 1.20543 -0.120631 0.72131 0.364367C0.237562 0.849302 0.238812 1.63486 0.72381 2.11855L14.6438 16.0001L0.72331 29.8815C0.238374 30.3652 0.237124 31.1503 0.72081 31.6353C0.963496 31.8784 1.28143 32 1.59937 32C1.91649 32 2.23318 31.8792 2.47543 31.6378L17.2764 16.8782C17.51 16.6458 17.6411 16.3296 17.6411 16.0001C17.6411 15.6706 17.5096 15.3547 17.2764 15.1219Z" fill="#5C5D58"/>
+                </svg>                    
+              </div>
+          </div>
     </div>
     <footer>
         <div class="footer-content">
@@ -480,33 +408,65 @@
                 </div>
                 <div class="social-links">
                     <a href="">
-                        <img src="img/фейсбук.svg" alt="fb">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18.0012" r="17.5" stroke="#F9F9F9"/>
+                            <g clip-path="url(#clip0)">
+                            <path d="M21.3305 10.6541H23.4302V7.15614C23.0679 7.10847 21.8221 7.00122 20.3712 7.00122C17.3438 7.00122 15.27 8.82264 15.27 12.1703V15.2512H11.9292V19.1617H15.27V29.0012H19.3659V19.1626H22.5715L23.0804 15.2521H19.3649V12.5581C19.3659 11.4278 19.684 10.6541 21.3305 10.6541Z" fill="#F9F9F9"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="23" height="22" fill="white" transform="translate(6 7.00122)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
                     </a>
                     <a href="">
-                        <img src="img/инста.svg" alt="inst">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18.0012" r="17.5" stroke="#F9F9F9"/>
+                            <g clip-path="url(#clip0)">
+                            <path d="M18.0036 12.3528C14.8842 12.3528 12.3588 14.881 12.3588 17.9976C12.3588 21.117 14.887 23.6425 18.0036 23.6425C21.123 23.6425 23.6485 21.1143 23.6485 17.9976C23.6485 14.8782 21.1203 12.3528 18.0036 12.3528ZM18.0036 21.6615C15.9787 21.6615 14.3397 20.0216 14.3397 17.9976C14.3397 15.9736 15.9796 14.3337 18.0036 14.3337C20.0276 14.3337 21.6675 15.9736 21.6675 17.9976C21.6685 20.0216 20.0285 21.6615 18.0036 21.6615Z" fill="#F9F9F9"/>
+                            <path d="M22.5354 7.07155C20.5114 6.97713 15.4982 6.98171 13.4723 7.07155C11.6922 7.15496 10.1219 7.58488 8.856 8.8508C6.74033 10.9665 7.01075 13.8173 7.01075 17.9982C7.01075 22.2772 6.77242 25.062 8.856 27.1456C10.9799 29.2686 13.872 28.9909 18.0034 28.9909C22.2421 28.9909 23.7051 28.9936 25.2038 28.4134C27.2416 27.6223 28.7797 25.8009 28.9301 22.5293C29.0254 20.5044 29.0199 15.492 28.9301 13.4662C28.7486 9.6043 26.676 7.26221 22.5354 7.07155ZM25.7392 25.7459C24.3523 27.1328 22.4282 27.009 17.9768 27.009C13.3935 27.009 11.5556 27.0769 10.2145 25.7321C8.66992 24.1949 8.9495 21.7263 8.9495 17.9835C8.9495 12.919 8.42975 9.27155 13.5127 9.01121C14.6805 8.96996 15.0243 8.95621 17.964 8.95621L18.0052 8.98371C22.8902 8.98371 26.7227 8.47221 26.9528 13.5542C27.0051 14.7138 27.017 15.0621 27.017 17.9973C27.0161 22.5275 27.1023 24.3764 25.7392 25.7459Z" fill="#F9F9F9"/>
+                            <path d="M23.872 13.4492C24.6005 13.4492 25.1911 12.8586 25.1911 12.1301C25.1911 11.4016 24.6005 10.811 23.872 10.811C23.1435 10.811 22.5529 11.4016 22.5529 12.1301C22.5529 12.8586 23.1435 13.4492 23.872 13.4492Z" fill="#F9F9F9"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="22" height="22" fill="white" transform="translate(7 7.00122)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
                     </a>
                     <a href="">
-                        <img src="img/твитер.svg" alt="twit">
+                        <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="18" cy="18.0012" r="17.5" stroke="#F9F9F9"/>
+                            <g clip-path="url(#clip0)">
+                            <path d="M27.1367 13.5215C28.0721 12.8862 28.8589 12.0933 29.5 11.1803V11.1794C28.6442 11.5378 27.7338 11.7761 26.7831 11.8916C27.7606 11.3334 28.5072 10.4561 28.8579 9.39922C27.9465 9.91897 26.9403 10.2856 25.8679 10.491C25.0025 9.60914 23.7692 9.06372 22.4237 9.06372C19.8132 9.06372 17.7115 11.0905 17.7115 13.5746C17.7115 13.9321 17.7432 14.2759 17.8208 14.6031C13.9012 14.4198 10.432 12.6231 8.10137 9.88505C7.69504 10.5606 7.45546 11.3334 7.45546 12.1648C7.45546 13.7268 8.29592 15.111 9.55037 15.9131C8.79233 15.8993 8.04962 15.6885 7.42 15.3576V15.4071C7.42 17.5988 9.05396 19.4193 11.1978 19.8391C10.8135 19.94 10.3956 19.9876 9.9615 19.9876C9.65962 19.9876 9.35487 19.9711 9.06929 19.9106C9.67975 21.6963 11.4143 23.0099 13.4747 23.053C11.8705 24.2529 9.83308 24.9761 7.62796 24.9761C7.24175 24.9761 6.87088 24.9596 6.5 24.9147C8.58917 26.2026 11.0636 26.9387 13.7335 26.9387C22.0547 26.9387 27.4779 20.2984 27.1367 13.5215Z" fill="#F9F9F9"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0">
+                            <rect width="23" height="22" fill="white" transform="translate(6 7.00122)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
                     </a>
                 </div>
             </div>
             <div class="footer-menu">
-                <div class="menu-item">
+                <div class="fmenu-item">
                     <a href="">О нас</a>
                 </div>
-                <div class="menu-item">
+                <div class="fmenu-item">
                     <a href="">Клиенты</a>
                 </div>
-                <div class="menu-item">
+                <div class="fmenu-item">
                     <a href="">Наши принципы</a>
                 </div>
-                <div class="menu-item">
+                <div class="fmenu-item">
                     <a href="">Услуги</a>
                 </div>
-                <div class="menu-item">
+                <div class="fmenu-item">
                     <a href="">Наши проекты</a>
                 </div>
-                <div class="menu-item">
+                <div class="fmenu-item">
                     <a href="">Контакты</a>
                 </div>
             </div>
@@ -524,10 +484,42 @@
             </div>
         </div>
         <div class="copyright">
-            © 2020 ЦФО. Все права защищены. Политика конфиденциальности <br>
+            © 2020 ЦФО. Все права защищены. Политика конфиденциальности <br> <br>
             Разработано Site-Creative
         </div>  
     </footer>
+
+    <div class="burger-menu" id="modal">
+        <svg class="xclose" id="xclose" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.0575 8.51387L16.6769 1.89421C17.1077 1.46363 17.1077 0.767434 16.6769 0.336852C16.2464 -0.0937294 15.5502 -0.0937294 15.1196 0.336852L8.49991 6.95652L1.88044 0.336852C1.44966 -0.0937294 0.75367 -0.0937294 0.323088 0.336852C-0.107696 0.767434 -0.107696 1.46363 0.323088 1.89421L6.94256 8.51387L0.323088 15.1335C-0.107696 15.5641 -0.107696 16.2603 0.323088 16.6909C0.537673 16.9057 0.81982 17.0136 1.10177 17.0136C1.38371 17.0136 1.66566 16.9057 1.88044 16.6909L8.49991 10.0712L15.1196 16.6909C15.3344 16.9057 15.6163 17.0136 15.8983 17.0136C16.1802 17.0136 16.4622 16.9057 16.6769 16.6909C17.1077 16.2603 17.1077 15.5641 16.6769 15.1335L10.0575 8.51387Z" fill="#5C5D58"/>
+        </svg>
+        <div class="burger-logo">
+            Logo
+        </div>
+        <div class="burger-block">
+            <a href="" class="burger-item">
+                О нас
+            </a>
+            <a href="" class="burger-item">
+                Клиенты
+            </a>
+            <a href="" class="burger-item">
+                Наши принципы
+            </a>
+            <a href="" class="burger-item">
+                Услуги
+            </a>
+            <a href="" class="burger-item">
+                Наши проекты
+            </a>
+            <a href="" class="burger-item">
+                Контакты
+            </a>
+        </div>
+        <div class="burger-phone">
+            <a href="tel:+74993806868">+7 (499) 380 - 68 - 88</a>
+        </div>
+    </div>
 <script src="js/isotope-docs.min.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
