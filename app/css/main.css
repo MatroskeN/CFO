@@ -303,6 +303,11 @@ header .header-content .header-phone a:hover {
     margin-top: 61px;
   }
 }
+@media (max-width: 769px) {
+  .banner {
+    height: 451px;
+  }
+}
 .offers {
   padding-top: 90px;
   max-width: 874px;
@@ -769,7 +774,7 @@ header .header-content .header-phone a:hover {
 @media (max-width: 769px) {
   .about {
     height: auto;
-    max-height: 815px;
+    max-height: 755px;
     min-height: unset !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -796,7 +801,7 @@ header .header-content .header-phone a:hover {
     margin: 0 auto;
     height: auto;
     max-width: 280px;
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .about .about-slider .swiper-wrapper {
     height: 360px;
@@ -1510,6 +1515,8 @@ footer .footer-content {
 }
 footer .footer-content .contact-block .line {
   margin-left: unset;
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 footer .footer-content .contact-block .contact-title {
   margin-bottom: 9px;
@@ -1745,8 +1752,8 @@ footer .copyright a:hover {
   }
   footer .footer-content .contact-block .line {
     margin: unset;
-    margin-top: 10px;
-    margin-bottom: 21px;
+    margin-top: 10px !important;
+    margin-bottom: 21px !important;
   }
   footer .footer-content .contact-block .contacts .contact-item {
     font-family: Roboto;
