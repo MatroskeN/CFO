@@ -116,10 +116,11 @@ header .header-content .header-menu {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 10px;
+  max-width: 1200px;
+  width: 100%;
 }
 header .header-content .header-menu .menu-item {
   min-width: 170px;
-  margin-right: 25px;
   text-align: center;
 }
 header .header-content .header-menu .menu-item a {
@@ -153,13 +154,18 @@ header .header-content .header-phone a:hover {
   border-bottom: none;
 }
 .scroll-header {
-  background: silver;
+  background: #1C569B;
 }
 .scroll-header .header-content {
   padding-top: 25px !important;
 }
 .burger {
   display: none;
+}
+@media (max-width: 1665px) and (min-width: 1601px) {
+  .header-phone {
+    min-width: 170px;
+  }
 }
 @media (max-width: 1600px) {
   header .header-content {
@@ -170,7 +176,6 @@ header .header-content .header-phone a:hover {
     padding-left: 30px;
   }
   header .header-content .header-menu .menu-item {
-    margin-right: 33px;
     min-width: 120px;
     font-size: 18px;
     line-height: 18px;
@@ -178,6 +183,7 @@ header .header-content .header-phone a:hover {
   }
   header .header-content .header-phone {
     min-width: 150px;
+    margin-left: 70px;
   }
   header .header-content .header-phone a {
     font-size: 16px;
@@ -204,13 +210,17 @@ header .header-content .header-phone a:hover {
     right: 25px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1251px) {
   .menu-item {
     min-width: 86px !important;
   }
   .menu-item a {
     font-size: 18px !important;
     line-height: 20px !important;
+  }
+  .header-phone {
+    margin-left: 21px !important;
+    margin-right: -80px;
   }
 }
 .banner {
@@ -376,6 +386,7 @@ header .header-content .header-phone a:hover {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 26px;
     color: #5C5D58;
     max-width: 280px;
   }
@@ -405,7 +416,27 @@ header .header-content .header-phone a:hover {
   /* identical to box height */
   color: #5C5D58;
 }
+.why .count {
+  background-size: auto;
+  z-index: 10;
+  position: relative;
+}
+.why .first-count {
+  background: url(../img/иконка\ 1.svg) center no-repeat;
+}
+.why .second-count {
+  background: url(../img/иконка\ 2.svg) center no-repeat;
+}
+.why .third-count {
+  background: url(../img/иконка\ 3.svg) center no-repeat;
+}
+.why .fourth-count {
+  background: url(../img/иконка\ 4.svg) center no-repeat;
+}
 @media (max-width: 769px) {
+  .why {
+    padding-top: 42px;
+  }
   .why .why-title {
     font-family: Montserrat;
     font-style: normal;
@@ -428,9 +459,19 @@ header .header-content .header-phone a:hover {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 320px i !important;
   }
   .why .counter .counter-wrapper .counter-item {
-    margin-right: unset !important;
+    margin: 0 auto !important;
+    margin-bottom: 48px !important;
+  }
+  .why .counter .counter-wrapper .counter-item P {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .why .counter .counter-wrapper .counter-item .count {
+    margin-top: 20px;
+    margin-bottom: 12px;
   }
 }
 .counter {
@@ -471,7 +512,12 @@ header .header-content .header-phone a:hover {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1250px;
+  max-width: 1122px;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   z-index: 1;
   padding-top: 47px;
@@ -488,7 +534,6 @@ header .header-content .header-phone a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-right: 187px;
   max-width: 200px;
   min-width: 191px;
   text-align: center;
@@ -516,9 +561,6 @@ header .header-content .header-phone a:hover {
   line-height: 47px;
   /* identical to box height */
   color: #F9F9F9;
-}
-.counter .counter-item:nth-child(5n) {
-  margin-right: unset;
 }
 @media (max-width: 1500px) {
   .counter-wrapper {
@@ -588,6 +630,12 @@ header .header-content .header-phone a:hover {
 .our .client-items .client-item:nth-child(3n+3) {
   margin-right: unset;
 }
+@media (max-width: 1025px) {
+  .our .client-items .client-item {
+    width: 330px;
+    margin-right: 15px;
+  }
+}
 .our .client-items .client-item .item-pic {
   margin: 0 auto;
   margin-top: auto;
@@ -608,7 +656,14 @@ header .header-content .header-phone a:hover {
     /* identical to box height */
     color: #5C5D58;
   }
+  .line {
+    margin: 0 auto;
+    margin-top: 21px !important;
+    margin-bottom: 13px !important;
+  }
   .our-subtitle {
+    margin-bottom: 21px !important;
+    margin-top: unset !important;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
@@ -623,10 +678,9 @@ header .header-content .header-phone a:hover {
   .client-items .client-item {
     width: 280px !important;
     height: 176px !important;
-    margin-right: unset !important;
     margin-bottom: 13px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto !important;
   }
   .client-items .client-item img {
     width: 237px;
@@ -706,15 +760,23 @@ header .header-content .header-phone a:hover {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 1025px) {
+  .about {
+    min-height: 1102px !important;
+    height: auto !important;
+  }
+}
 @media (max-width: 769px) {
   .about {
     height: auto;
     max-height: 815px;
+    min-height: unset !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    background-position: left;
   }
   .about .about-text {
     padding-top: 27px;
@@ -734,6 +796,7 @@ header .header-content .header-phone a:hover {
     margin: 0 auto;
     height: auto;
     max-width: 280px;
+    padding-top: 150px;
   }
   .about .about-slider .swiper-wrapper {
     height: 360px;
@@ -748,6 +811,9 @@ header .header-content .header-phone a:hover {
   }
   .about .about-slider .swiper-pagination-bullets .swiper-pagination-bullet {
     background: gray;
+  }
+  .about .about-slider .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    background: #177FC7;
   }
 }
 .principles {
@@ -848,7 +914,26 @@ header .header-content .header-phone a:hover {
 }
 @media (max-width: 769px) {
   .principles {
-    padding-top: 355px;
+    padding-top: 430px;
+  }
+  .principles .princip-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #5C5D58;
+  }
+  .principles .princip-subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-align: center;
+    color: #5C5D58;
   }
   .principles .princip-items {
     -webkit-box-orient: vertical;
@@ -857,6 +942,7 @@ header .header-content .header-phone a:hover {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     max-width: 280px;
+    margin-top: 21px !important;
   }
   .principles .princip-items .princip-item {
     width: 280px;
@@ -941,6 +1027,9 @@ header .header-content .header-phone a:hover {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.services .service-items .service-item .item-pic {
+  height: 221px;
+}
 .services .service-items .service-item .item-title {
   font-family: Montserrat;
   font-style: normal;
@@ -998,8 +1087,12 @@ header .header-content .header-phone a:hover {
   .services .service-items .service-item {
     max-width: 300px;
     height: auto;
-    padding: 10px;
+    padding: unset !important;
     border: none;
+  }
+  .services .service-items .service-item .item-pic {
+    height: 180px !important;
+    margin-bottom: 9.21px;
   }
   .services .service-items .service-item .item-pic img {
     width: 280px;
@@ -1012,6 +1105,7 @@ header .header-content .header-phone a:hover {
     line-height: 20px;
     color: #1C569B;
     margin-bottom: 14px;
+    width: 280px;
   }
   .services .service-items .service-item .item-descr {
     font-family: Roboto;
@@ -1020,6 +1114,7 @@ header .header-content .header-phone a:hover {
     font-size: 14px !important;
     line-height: 16px !important;
     color: #5C5D58;
+    width: 280px;
   }
 }
 .ideas {
@@ -1034,6 +1129,10 @@ header .header-content .header-phone a:hover {
   /* identical to box height */
   text-align: center;
   color: #5C5D58;
+}
+.ideas .line {
+  margin-top: 23px;
+  margin-bottom: 43px;
 }
 .ideas .idea-subtitle {
   max-width: 508px;
@@ -1159,6 +1258,7 @@ header .header-content .header-phone a:hover {
   .ideas .idea-items {
     max-width: 300px;
     margin-top: 21px;
+    padding: unset;
   }
   .ideas .idea-items .idea-item {
     min-height: unset;
@@ -1318,6 +1418,10 @@ header .header-content .header-phone a:hover {
     /* identical to box height */
     color: #5C5D58;
   }
+  .projects .line {
+    margin-top: 21px;
+    margin-bottom: 27px;
+  }
   .projects .tab-slider .button-group {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1325,9 +1429,14 @@ header .header-content .header-phone a:hover {
     display: flex;
     margin: 0 auto;
     max-width: 300px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projects .tab-slider .button-group .button {
     min-width: unset;
+    width: auto;
     height: auto;
     font-family: Roboto;
     font-style: normal;
@@ -1338,7 +1447,11 @@ header .header-content .header-phone a:hover {
     text-align: center;
     color: #5C5D58;
     border: none;
-    margin-right: 8px;
+    margin-right: unset !important;
+  }
+  .projects .tab-slider .button-group .showbox-filter {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .projects .tab-slider .button-group .button:active,
   .projects .tab-slider .button-group .button.is-checked {
@@ -1351,6 +1464,19 @@ header .header-content .header-phone a:hover {
     background-color: transparent;
     text-shadow: none;
     color: #1c569b;
+  }
+  .projects .slider img {
+    width: 260px !important;
+  }
+  .projects .navigation-element {
+    top: 35% !important;
+    height: 22px;
+  }
+  .projects .prev {
+    left: 11px !important;
+  }
+  .projects .next {
+    right: 11px !important;
   }
 }
 footer {
@@ -1417,6 +1543,13 @@ footer .footer-content .contact-block .contacts .contact-item strong {
   /* identical to box height */
   color: #F9F9F9;
 }
+footer .footer-content .contact-block .contacts .contact-item a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+footer .footer-content .contact-block .contacts .contact-item a:hover {
+  text-decoration: underline;
+}
 footer .footer-content .contact-block .social-links a {
   margin-right: 15px;
   text-decoration: none;
@@ -1470,6 +1603,12 @@ footer .footer-content .contact-form input {
   margin-left: auto;
   margin-bottom: 9px;
   padding: 11px 0px 15px 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 footer .footer-content .contact-form input::-webkit-input-placeholder {
   font-family: Roboto;
@@ -1512,7 +1651,8 @@ footer .footer-content .contact-form input::placeholder {
   color: #F9F9F9;
 }
 footer .footer-content .contact-form #comment {
-  height: 115px;
+  padding-bottom: 84px;
+  position: relative;
 }
 footer .footer-content .contact-form .policy {
   max-width: 433px;
@@ -1551,18 +1691,31 @@ footer .copyright {
   max-width: 1250px;
   margin: 0 auto;
   text-align: left;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #F9F9F9;
   margin-top: -46px;
   padding-bottom: 46px;
+}
+footer .copyright a {
+  color: #f9f9f9;
+  text-decoration: none;
+  margin-top: 14px;
+}
+footer .copyright a:hover {
+  text-decoration: underline;
 }
 @media (max-width: 1300px) {
   footer .footer-content {
