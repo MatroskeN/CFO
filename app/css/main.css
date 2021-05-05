@@ -269,7 +269,7 @@ header .header-content .header-phone a:hover {
 .banner .main-title .title-btn {
   margin: 0 auto;
   margin-top: 98px;
-  padding: 0 47px 0 47px;
+  padding: 0 47px 0 43px;
   border: none;
   outline: none;
   width: auto;
@@ -280,8 +280,8 @@ header .header-content .header-phone a:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 26px;
   color: #F9F9F9;
   border: 1px #f9f9f9 solid;
   -webkit-transition: all 0.4s;
@@ -368,8 +368,8 @@ header .header-content .header-phone a:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 26px;
   /* text blue */
   color: #0E577B;
   display: -webkit-box;
@@ -593,7 +593,7 @@ header .header-content .header-phone a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  max-width: 200px;
+  max-width: 210px;
   min-width: 191px;
   text-align: center;
   -webkit-box-pack: center;
@@ -605,19 +605,19 @@ header .header-content .header-phone a:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 26px;
   color: #F9F9F9;
   margin-bottom: unset;
 }
 .counter .counter-item .count {
   margin-top: 31px;
   margin-bottom: 22px;
-  font-family: Roboto;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 44px;
+  line-height: 54px;
   /* identical to box height */
   color: #F9F9F9;
 }
@@ -1426,8 +1426,8 @@ header .header-content .header-phone a:hover {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 22px;
+  line-height: 27px;
   text-align: center;
   color: #F9F9F9;
   margin-top: 32px;
@@ -1552,8 +1552,8 @@ header .header-content .header-phone a:hover {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   color: #1C569B;
   -webkit-transition: all 0.4s;
@@ -1633,13 +1633,13 @@ header .header-content .header-phone a:hover {
   transition: all 0.4s;
 }
 .projects .grid-container .slider .item-subtitle {
-  max-width: 350px;
+  max-width: 300px;
   margin-top: 13px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 27px;
+  font-size: 20px;
+  line-height: 24px;
   text-align: center;
   /* text blue */
   color: #0E577B;
@@ -1940,10 +1940,10 @@ footer .footer-content .contact-form button {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 22px;
+  line-height: 26px;
   color: #F9F9F9;
-  padding: 15px 47px 15px 47px;
+  padding: 15px 47px 15px 43px;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
